@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using System.Runtime.Serialization;
 using UsbLibrary;
 using System.Xml.Serialization;
+using System.Diagnostics;
 
 namespace rawhid
 {
@@ -517,12 +518,30 @@ namespace rawhid
             }
         }
 
+        public static string hex2ascii(string hexstring)
+        {
+            string[] tmpary = hexstring.Trim().Split(' ');
+            byte[] buff = new byte[tmpary.Length];
+            String ascii = "";
+
+            for (int i = 2; i < buff.Length; i++)
+            {
+                buff[i] = Convert.ToByte(tmpary[i], 16);
+                char charValue = Convert.ToChar(buff[i]);
+                ascii += charValue;
+            }
+            //return buff;
+            return ascii;
+        }
         private void LogDataGridView_SelectionChanged(object sender, EventArgs e)
         {
             if (LogDataGridView.SelectedRows.Count <= 0 ||
                 LogDataGridView.SelectedRows.Count > 1) return;
 
             LogTextBox.Text = LogDataGridView.SelectedRows[0].Cells[3].Value.ToString();
+            //Console.WriteLine("Text in HEX: " + LogTextBox.Text);
+            Console.WriteLine("Text in ASCII: " + hex2ascii(LogTextBox.Text));
+            LogTextBox.Text +="===\r\n" + hex2ascii(LogTextBox.Text);
         }
 
         private void ClearButton_Click(object sender, EventArgs e)

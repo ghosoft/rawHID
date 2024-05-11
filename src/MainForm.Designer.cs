@@ -104,7 +104,7 @@
             this.InfoToolStripButton});
             this.m_ToolStrip.Location = new System.Drawing.Point(0, 0);
             this.m_ToolStrip.Name = "m_ToolStrip";
-            this.m_ToolStrip.Size = new System.Drawing.Size(634, 25);
+            this.m_ToolStrip.Size = new System.Drawing.Size(641, 25);
             this.m_ToolStrip.TabIndex = 1;
             this.m_ToolStrip.Text = "toolStrip";
             // 
@@ -123,7 +123,7 @@
             this.m_ToolStripComboBox.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.m_ToolStripComboBox.Margin = new System.Windows.Forms.Padding(2, 0, 5, 0);
             this.m_ToolStripComboBox.Name = "m_ToolStripComboBox";
-            this.m_ToolStripComboBox.Size = new System.Drawing.Size(300, 23);
+            this.m_ToolStripComboBox.Size = new System.Drawing.Size(300, 25);
             // 
             // ConnectToolStripButton
             // 
@@ -263,8 +263,8 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(634, 361);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 51F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(641, 517);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
             // splitContainer1
@@ -281,8 +281,8 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.LogDataGridView);
-            this.splitContainer1.Size = new System.Drawing.Size(628, 300);
-            this.splitContainer1.SplitterDistance = 182;
+            this.splitContainer1.Size = new System.Drawing.Size(634, 422);
+            this.splitContainer1.SplitterDistance = 256;
             this.splitContainer1.TabIndex = 0;
             // 
             // TxDataGridView
@@ -326,7 +326,7 @@
             this.TxDataGridView.RowHeadersVisible = false;
             this.TxDataGridView.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.SystemColors.Control;
             this.TxDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.TxDataGridView.Size = new System.Drawing.Size(628, 182);
+            this.TxDataGridView.Size = new System.Drawing.Size(634, 256);
             this.TxDataGridView.TabIndex = 0;
             this.TxDataGridView.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.TxDataGridView_CellMouseDoubleClick);
             this.TxDataGridView.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxDataGridView_KeyUp);
@@ -417,7 +417,7 @@
             this.LogDataGridView.Name = "LogDataGridView";
             this.LogDataGridView.RowHeadersVisible = false;
             this.LogDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.LogDataGridView.Size = new System.Drawing.Size(628, 114);
+            this.LogDataGridView.Size = new System.Drawing.Size(634, 162);
             this.LogDataGridView.TabIndex = 0;
             this.LogDataGridView.SelectionChanged += new System.EventHandler(this.LogDataGridView_SelectionChanged);
             // 
@@ -468,10 +468,10 @@
             this.panel1.Controls.Add(this.LogTextBox);
             this.panel1.Controls.Add(this.ClearButton);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 306);
+            this.panel1.Location = new System.Drawing.Point(3, 428);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(628, 55);
+            this.panel1.Size = new System.Drawing.Size(634, 80);
             this.panel1.TabIndex = 1;
             // 
             // LogTextBox
@@ -488,7 +488,7 @@
             this.LogTextBox.Name = "LogTextBox";
             this.LogTextBox.ReadOnly = true;
             this.LogTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.LogTextBox.Size = new System.Drawing.Size(565, 55);
+            this.LogTextBox.Size = new System.Drawing.Size(571, 80);
             this.LogTextBox.TabIndex = 1;
             // 
             // ClearButton
@@ -496,10 +496,10 @@
             this.ClearButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ClearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ClearButton.Location = new System.Drawing.Point(568, 0);
+            this.ClearButton.Location = new System.Drawing.Point(574, 0);
             this.ClearButton.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.ClearButton.Name = "ClearButton";
-            this.ClearButton.Size = new System.Drawing.Size(60, 55);
+            this.ClearButton.Size = new System.Drawing.Size(60, 80);
             this.ClearButton.TabIndex = 2;
             this.ClearButton.Text = "Clear";
             this.ClearButton.UseVisualStyleBackColor = true;
@@ -511,10 +511,10 @@
             this.m_ToolStripStatusLabel,
             this.m_ToolStripStatusString,
             this.m_ToolStripStatusIcon});
-            this.m_StatusStrip.Location = new System.Drawing.Point(0, 386);
+            this.m_StatusStrip.Location = new System.Drawing.Point(0, 542);
             this.m_StatusStrip.Name = "m_StatusStrip";
             this.m_StatusStrip.ShowItemToolTips = true;
-            this.m_StatusStrip.Size = new System.Drawing.Size(634, 25);
+            this.m_StatusStrip.Size = new System.Drawing.Size(641, 25);
             this.m_StatusStrip.TabIndex = 0;
             this.m_StatusStrip.Text = "statusStrip";
             // 
@@ -533,7 +533,7 @@
             this.m_ToolStripStatusString.BorderStyle = System.Windows.Forms.Border3DStyle.Etched;
             this.m_ToolStripStatusString.Name = "m_ToolStripStatusString";
             this.m_ToolStripStatusString.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
-            this.m_ToolStripStatusString.Size = new System.Drawing.Size(488, 20);
+            this.m_ToolStripStatusString.Size = new System.Drawing.Size(526, 20);
             this.m_ToolStripStatusString.Spring = true;
             this.m_ToolStripStatusString.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -552,16 +552,16 @@
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(634, 411);
+            this.ClientSize = new System.Drawing.Size(641, 567);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.m_ToolStrip);
             this.Controls.Add(this.m_StatusStrip);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
-            this.MinimumSize = new System.Drawing.Size(650, 450);
+            this.MinimumSize = new System.Drawing.Size(650, 418);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RawHID GUI";
